@@ -4,7 +4,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Profiler.Basics;
+using LagGridBroadcaster.InternalProfiler;
 using Sandbox.Game.Entities;
 using Sandbox.Game.World;
 using VRageMath;
@@ -16,7 +16,6 @@ namespace LagGridBroadcaster
         public MeasureResult()
         {
         }
-
         public MeasureResult(MyCubeGrid myCubeGrid, ProfilerEntry profilerEntry, ulong ticks)
         {
             EntityId = myCubeGrid.EntityId;

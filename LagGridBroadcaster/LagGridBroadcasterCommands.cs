@@ -5,8 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using NLog;
-using Profiler.Basics;
-using Profiler.Core;
+using LagGridBroadcaster.InternalProfiler;
 using Sandbox;
 using Sandbox.Game.Entities;
 using Sandbox.Game.Screens.Helpers;
@@ -75,7 +74,6 @@ namespace LagGridBroadcaster
                     using (ProfilerResultQueue.Profile(profiler))
                     {
                         Context.Respond($"Started profiling grids, result in {seconds}s");
-
                         var startTick = MySandboxGame.Static.SimulationFrameCounter;
                         profiler.MarkStart();
                         await Task.Delay(TimeSpan.FromSeconds(seconds));

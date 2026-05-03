@@ -30,11 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Profiler, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>$(SolutionDir)\Profiler\Profiler.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -159,6 +154,7 @@
     <Compile Include="GpsComparer.cs" />
     <Compile Include="LagGridBroadcasterCommands.cs" />
     <Compile Include="LagGridBroadcasterConfig.cs" />
+    <Compile Include="InternalProfiler\ProfilerCore.cs" />
     <Compile Include="MeasureResult.cs" />
     <Page Include="LagGridBroadcasterControl.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -178,7 +174,6 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <Analyzer Include="..\Profiler\Profiler.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="CreateDebugZip" BeforeTargets="AfterBuild" Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">

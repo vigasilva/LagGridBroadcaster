@@ -6,7 +6,9 @@ Torch link: https://torchapi.com/plugins/view/?guid=dd316db4-5d89-4db2-aa47-dac2
 Github link: https://github.com/czp3009/LagGridBroadcaster
 
 # Dependency
-This plugin is base on [Profiler](https://torchapi.com/plugins/view/?guid=da82de0f-9d2f-4571-af1c-88c7921bc063), please make sure you have that plugin installed.
+This version embeds the required profiling runtime inside LagGridBroadcaster.
+
+External Profiler plugin is not required for `!laggrids send`.
 
 # Command
 `!laggrids help` Show help message
